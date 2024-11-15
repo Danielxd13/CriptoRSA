@@ -29,5 +29,8 @@ print("Encrypted text hex: \n", encrypted_text.hex())
 print("Public key: \n", public_key.save_pkcs1().decode())
 
 # Sign the message
-signature = sign_message(text, private_key)
-print("Firma con RSA en hexadecimal: \n", signature)
+rsaFirma = sign_message(text, private_key)
+print("Firma con RSA en hexadecimal: \n", rsaFirma)
+
+rsaAnterior = rsa.sign(rsaFirma.encode(), private_key, 'SHA-256')
+print("Firmar con RSA el mensaje anterior: \n", rsaAnterior.hex())
