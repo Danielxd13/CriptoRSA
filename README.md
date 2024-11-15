@@ -1,0 +1,1 @@
+Esta es una función de Python llamada `encrypt_rsa` que encripta un texto dado utilizando encriptación RSA. Genera un nuevo par de claves RSA con una longitud y exponente especificados, utiliza la clave pública para encriptar el texto y devuelve el texto encriptado junto con la clave pública.
