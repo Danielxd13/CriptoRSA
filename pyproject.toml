@@ -1,0 +1,3 @@
+[build-system]\n\nrequires = [
+    setuptools >= 45.2
+]
